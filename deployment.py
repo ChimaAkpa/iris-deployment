@@ -8,7 +8,7 @@ import numpy as np
 import pickle
 import streamlit as st
 
-load_model = pickle.load(open("C:/Users/Chima/Documents/Python codes/TEST/trained_model.sav", "rb"))
+load_model = pickle.load(open("trained_model.sav", "rb"))
 def predictionModel(input_data, model):
     #convert thr input data to an array using numpy
     input_data = np.asarray(input_data)
